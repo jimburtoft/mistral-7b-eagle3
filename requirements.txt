@@ -1,0 +1,11 @@
+# Core (CPU / CUDA). On Trainium use the AWS Neuron SDK 2.33 torch-neuronx environment (torch 2.14 + torch-neuronx)
+# and install the rest on top.
+torch>=2.9
+transformers>=5.17
+safetensors
+sentencepiece
+numpy
+datasets
+# Tests only
+# speculators==0.9.0
+# Serving / benchmarks: vllm (GPU) or vllm + vllm-neuron (Trainium)
